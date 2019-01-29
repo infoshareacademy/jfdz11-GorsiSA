@@ -1,1 +1,1 @@
-# jfdz11-GorsiSA
+# jfdz11-GorsiSA - Planer biegów na orientację
