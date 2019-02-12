@@ -36,7 +36,7 @@ body{
 }
 
 .newsletter__input:focus{
-    margin-left: 30%;
+    margin-left: 40%;
     margin-bottom: 20px;
     height: 40px;
     border: solid 1px;
