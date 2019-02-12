@@ -1,0 +1,61 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.hero{
+    height: 90%;
+    background-size: cover;
+    background-image: url('../img/run.jpg');
+}
+
+.newsletter{
+    clear: both;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.newsletter__input{
+    margin-left: 40%;
+    margin-bottom: 20px;
+    height: 40px;
+    border: solid 1px;
+    width: 300px;
+    border-radius: 15px 15px 15px 15px;
+    font-size: 18px;
+   
+}
+
+.newsletter__input:focus{
+    margin-left: 30%;
+    margin-bottom: 20px;
+    height: 40px;
+    border: solid 1px;
+    width: 300px;
+    border-radius: 15px 15px 15px 15px;
+    font-size: 18px;
+    outline: none;
+}
+
+.newsletter__submit{
+    margin: 30% 20px;
+    height: 40px;
+    width: 160px;
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px 5px;
+    margin-bottom: 20px;
+}
+
+.newsletter__submit:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
