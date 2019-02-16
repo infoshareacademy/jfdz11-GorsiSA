@@ -39,7 +39,7 @@ body{
 input[type=mail], 
 input[type=submit]
 {   
-   
+   opacity: 0.8;
     display: flex;
     margin-top: 25%;
     width: 300px;
