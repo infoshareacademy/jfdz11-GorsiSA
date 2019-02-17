@@ -1,0 +1,44 @@
+.wrapper{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    height: 100%
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 25%;
+}
+.container-column1{
+    width: 30%;
+    height: 100%;
+    border: 1px solid #000;
+}
+
+.container-column2{
+    width: 70%;
+    height: 100%;
+    border: 1px solid blue;
+}
+.container-column2-nested{
+    display: flex;
+}
+.container-column2-nested1{
+    width: 80%;
+    order: 2;
+    border: 1px solid #000;
+
+}
+.container-column2-nested2{
+    width: 20%;
+    border: 1px solid #000;
+}
+
+h1{
+    text-align: center;
+}
+
+.fab fa-facebook-square{
+
+}
