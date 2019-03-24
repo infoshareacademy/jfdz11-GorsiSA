@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="form.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    
+    <div class="hero">
+
+<header>
+    <h1>Zapisz się na wydarzenie, a wyślemy Ci grę związaną  z bieganiem</h1>
+</header>
+    
+    </div>
+
+    <form action="order.php" method="post" enctype="application/x-www-form-urlencoded" >
+<fieldset>
+      
+    <legend> Uzupełnij swoje dane, aby wziąść udział</legend>
+        <div class="row">
+
+            <div><label>Twoję imię   <input type="text" name="imie" placeholder="jak masz na imię?" ></label></div>
+            <div><label>Nazwisko     <input type="text" name="nazwisko" placeholder="jak masz na nazwisko?" ></label></div>
+            <div><label>Adres e-mail <input type="email" name="adres" placeholder="adres@domena" required></label></div> 
+        </div>
+
+        <div class="row">
+            <label>Data biegu        <input type ="date" name="dzień" min="" required></label>
+        </div>
+       <div class="row">
+           <input type="submit" value="Wezmę udział " >
+        
+       </div>
+    </fieldset>
+    </form>
+</body>
+</html>
