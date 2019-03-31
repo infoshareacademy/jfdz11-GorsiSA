@@ -1,12 +1,19 @@
+:root{
+	--menu-font-color: rgba(238, 238, 238);
+	--menu-background-color: rgb(86, 201, 4, 1);
+	--menu-hover-bg-color: #222;
+	--h1-color: rgb(86, 201, 4, 1);
+	--font-type: Amatic SC, cursive;
+ 
+ }
 
 
 
-
-.content{
-	background-color: white;
-	width: 300px;
+.contain{
+	background-color: rgb(236, 225, 225);
+    width: 320px;
 	outline: none;
-	text-align: justify;
+	text-align: center;
 	padding: 50px;
 	margin-left: auto;
 	margin-right: auto;
@@ -19,17 +26,18 @@
 	box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
 }
 
+.wrapper{
+	padding: 5px;
+	text-align: justify;
+}
 
- 
 
 
-input[type=text],
-input[type=date],
 input[type=email]
 {   
-
+    clear: both;
 	flex-direction: row-reverse;
-	
+	text-align: center;
 	background-color: #efefef;
 	color: #666;
 	border: 2px solid #ddd;
