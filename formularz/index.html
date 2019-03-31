@@ -16,27 +16,28 @@
     <h1>Zapisz się na wydarzenie, a wyślemy Ci grę związaną  z bieganiem</h1>
 </header>
     
-    </div>
+   
 
-    <form action="order.php" method="post" enctype="application/x-www-form-urlencoded" >
-<fieldset>
-      
-    <legend> Uzupełnij swoje dane, aby wziąść udział</legend>
-        <div class="row">
+       
+				
+                <div class="content">
+                        <form action="order.php" method="post">
+                            
+                            <input type="text" placeholder="imię" onfocus="this.placeholder=''" onblur="this.placeholder='imię'" >
+                            
+                            <input type="text" placeholder="nazwisko" onfocus="this.placeholder=''" onblur="this.placeholder='nazwisko'" >
+                            <input type="email" placeholder="adres@domena" onfocus="this.placeholder=''" onblur="this.placeholder='adres@domena'" required>
+                            <input type ="date" name="dzień" min="" required>
 
-            <div><label>Twoję imię   <input type="text" name="imie" placeholder="jak masz na imię?" ></label></div>
-            <div><label>Nazwisko     <input type="text" name="nazwisko" placeholder="jak masz na nazwisko?" ></label></div>
-            <div><label>Adres e-mail <input type="email" name="adres" placeholder="adres@domena" required></label></div> 
-        </div>
+                           
+                            <input type="submit" value="Zapisz się">
 
-        <div class="row">
-            <label>Data biegu        <input type ="date" name="dzień" min="" required></label>
-        </div>
-       <div class="row">
-           <input type="submit" value="Wezmę udział " >
+                          
+                            
+                        </form>
+                    </div>
         
-       </div>
-    </fieldset>
-    </form>
+        </div>
+       
 </body>
 </html>
