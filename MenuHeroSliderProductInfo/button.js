@@ -1,12 +1,13 @@
-window.onscroll = function() {
-    goToTop()
-};
+window.onscroll = function() {scrollFunction()};
 
-function goToTop() {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    document.getElementsById("ToTopButton").style.display = "block";
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    document.getElementById("myBtn").style.display = "block";
+    document.getElementById("menu-bar").style.height = "10%"
+
   } else {
-    document.getElementsById("ToTopButton").style.display = "none";
+    document.getElementById("myBtn").style.display = "none";
+    document.getElementById("menu-bar").style.height = "15%"
   }
 }
 
