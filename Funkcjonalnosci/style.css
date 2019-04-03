@@ -92,7 +92,7 @@ body {
     width: 75%;
 }
 
-h4 {
+.column1, .column2 h4 {
 font-size: 14px;
 font-weight: 700;
 letter-spacing: 2px;
@@ -101,8 +101,8 @@ text-transform: uppercase;
 text-align: center;
 color: #fff;
 }
-p{
-font-size: 10px;
+.column1, .column2 p{
+    font-size: 10px;
     font-weight: 500;
     letter-spacing: 2px;
     margin-bottom: 5px;
