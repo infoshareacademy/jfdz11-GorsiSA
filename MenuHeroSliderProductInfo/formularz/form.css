@@ -1,0 +1,77 @@
+:root{
+	--menu-font-color: rgba(238, 238, 238);
+	--menu-background-color: rgb(86, 201, 4, 1);
+	--menu-hover-bg-color: #222;
+	--h1-color: rgb(86, 201, 4, 1);
+	--font-type: Amatic SC, cursive;
+ 
+ }
+
+ #signUp-form{
+	 width: 100%;
+ }
+
+
+.contain{
+	background-color: rgb(236, 225, 225);
+    max-width: 320px;
+	outline: none;
+	text-align: center;
+	padding: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+    
+	font-size: 42px;
+	font-weight: 400;
+	-webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+	box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+}
+
+.wrapper{
+	padding: 5px;
+	text-align: justify;
+}
+
+
+
+input[type=email]
+{   
+    clear: both;
+	flex-direction: row-reverse;
+	text-align: center;
+	background-color: #efefef;
+	color: #666;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+
+	padding: 10px;
+	box-sizing: border-box;
+	outline: none;
+	margin-top: 10px;
+
+}
+
+input[type=submit]
+{
+	
+	background-color: #36b03c;
+	
+	color: white;
+	padding: 15px 10px;
+	margin-top: 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+	
+}
+
+input[type=submit]:focus
+{
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+}
