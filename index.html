@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Planer biegów na orientacje</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="root.css">
+    <link rel="stylesheet" type="text/css" href="style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="form.css" media="all">
+    <link rel="icon" href="images/favicon.png" type="image/favicon"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+
+</head>
+<body>
+    
+        <div id="menu-bar" class="menu-bar">
+            <a href="#home">Home</a>
+            <a href="#news">Zapisz się</a>
+            <a href="#contact">Funkcje</a>
+            <a href="#about">Zespół</a>
+        </div>
+<section id="landing-section" class="landing-section">
+    
+        <div class="landing-column1--text">
+            <h2>Zorientuj się z naszą aplikacją</h2>
+            <p>Poznaj funkcje i ciesz się prostotą</p>
+        </div>
+        <div class="landing-column2">
+            <button type="submit" href="#formularz" class="signButton">Zapisz się na premierę</button>
+        </div>
+</section>
+
+<div class="main">
+    <div class="column1">
+        <div class="map"
+            data-iconcolor="#fe4641"
+            data-bgcolor="#f9f9f9">
+            <img src="icons/map.svg" class="map_icon" >
+                <h4> Gdzie nas znaleźć?</h4>
+                <p>
+                    Wszędzie tam gdzie dzieją się ciekawe wydarzenia sportowe, jesteśmy na bieżąco ze wszystkimi istotnymi spotkaniami.
+                </p>
+        </div>
+        <div class="writing"
+            data-iconcolor="#fe4641"
+            data-bgcolor="#f9f9f9">
+            <img src="icons/writing.svg" class="writing_icon">
+                <h4> Jak to działa?</h4>
+                <p>
+                    Wchodzisz na naszą stronę i zapisujesz się do newslettera, wybierasz interesujące Cię opcje, a już nigdy nie przegapisz interesującego cię wydarzenia.
+                </p>
+        </div>
+        <div class="improve"
+            data-iconcolor="#fe4641"
+            data-bgcolor="#f9f9f9">
+            <img src="icons/impovement.svg" class="improvement_icon">
+                <h4> Co dzięki nam zyskujesz?</h4>
+                <p>
+                    Wszystko na czym ci zależy :) poprawa sylwetki, ciekawe spędzanie czasu lub po prostu poznanie nowych ludzi!
+                </p>
+        </div>
+    </div>
+ <div class="column2">
+    <div class="people"
+        data-iconcolor="#fe4641"
+        data-bgcolor="#f9f9f9">
+        <img src="icons/people.svg" class="people_icon">
+            <h4> Znajdź zapaleńców podobnych Tobie!</h4>
+            <p>
+                Dzięki naszej stronie będziesz mógł zaprosić do wspólnych biegów znajomych bądź poznać nowe osoby.
+            </p>
+    </div>
+    <div class="notification"
+        data-iconcolor="#fe4641"
+        data-bgcolor="#f9f9f9">
+        <img src="icons/notification.svg" class="notification_icon">
+        <h4>Przypomnienia!</h4>
+        <p>
+            Poprzez zapisanie się do subskrypcji już nigdy nie pominiesz interesującego cię eventu.
+        </p>
+    </div>
+    <div class="chat"
+        data-iconcolor="#fe4641"
+        data-bgcolor="#f9f9f9">
+        <img src="icons/chat.svg" class="chat_icon">
+        <h4>Komunikacja!</h4>
+        <p>
+            Możesz wymieniać się informcjami o nadchodzących wydarzeniach z innymi, bądź po prostu umówić się z kimś na wspólny bieg.
+        </p>
+    </div>
+</div>
+</div>
+
+<section id="signUp-form">
+    <div class="contain" >
+            <form action="order.php" method="post">
+                <span style="font-size:18px;">Uwaga zostanie wyslany tylko jeden mail z informacja o premierze!</span>
+                <input type="email" placeholder="adres@domena" onfocus="this.placeholder=''" onblur="this.placeholder='adres@domena'" required>
+                <input type="submit" value="Zapisz się"><br>
+                <div class="wrapper" style="clear:both;">
+                <p style="font-size:12px"><span>Mam prawo do wycofania się z tej zgody w dowolnym terminie. Dane osobowe będą przetwarzane do czasu jej odwołania.
+                    Mam prawo dostępu do moich danych osobowych, ich sprostowania, usunięcia lub ograniczenia przetwarzania, a także do wniesienia skargi do organu nadzorującego.
+                    W sytuacji wniesienia sprzeciwu wobec profilowania – prosimy skorzystać z ustawień przeglądarki.</p></span></div>
+            </form>
+        </div>
+    </section>
+
+<section id="productinfo-section" class="productinfo-section">
+    <div class="productfunctions">
+        <div class="productfunctions--wraper">
+            <div class="productfunctions__icon">
+                <i class="fas fa-map-pin"></i>
+                <h3>Znajdź eventy w okolicy</h2>
+            </div>
+            <div class="productfunctions__icon">
+                <i class="fas fa-user-friends"></i>
+                <h3>Poznaj biegaczy z okolic</h2>
+            </div>
+            <div class="productfunctions__icon">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>Ogólnopolski kalendarz eventów</h2>
+            </div>
+            <div class="productfunctions__icon">
+                <i class="fas fa-running"></i>
+                <h3>Znajdz trasy, umów się na trening</h2>
+            </div>
+        </div> 
+    </div>
+</section>
+
+<footer id="copyright">
+    Copyright &copy;
+    <br>
+    Made with passion by <i>GorsiSA</i>
+    <br>
+    last modified - march 2019
+</footer>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-alt-circle-up"></i></button>
+	
+
+    <script src="slider.js"></script>
+    <script src="button.js"></script>
+</body>
+</html>
