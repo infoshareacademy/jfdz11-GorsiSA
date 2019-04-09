@@ -32,6 +32,7 @@ body{
         background-color: var(--menu-background-color);
         height: 15%;
         position: fixed;
+        z-index: 999;
         display: flex;
         justify-content: space-evenly;
         scroll-behavior: smooth;
@@ -57,6 +58,7 @@ body{
         background-color: var(--menu-background-color);
         height: 15%;
         position: fixed;
+        z-index: 999;
         display: flex;
         justify-content: space-evenly;
         scroll-behavior: smooth;
@@ -82,6 +84,7 @@ body{
         background-color: var(--menu-background-color);
         height: 15%;
         position: fixed;
+        z-index: 999;
         display: flex;
         justify-content: space-evenly;
         scroll-behavior: smooth;
@@ -109,6 +112,7 @@ body{
         background-color: var(--menu-background-color);
         height: 15%;
         position: fixed;
+        z-index: 999;
         display: flex;
         justify-content: space-evenly;
         scroll-behavior: smooth;
@@ -394,8 +398,9 @@ body{
             display: none; 
             position: fixed; 
             bottom: 20px; 
-            right: 30px; 
-            z-index: 99; 
+            right: 20px; 
+            z-index: 99;
+            opacity: 0.6; 
             border: none; 
             outline: none; 
             background-color: var(--menu-background-color); 
@@ -407,11 +412,537 @@ body{
         }
         
         #myBtn:hover {
-            background-color: green; 
+            opacity: 1;
         }
     }
 
     
 
 
-/*******************KONIEC GO TO TUP BUTTON***********/
+/*******************KONIEC GO TO TOP BUTTON***********/
+/*/////////////////////////BEGINNING OF ABOUT US SECTION//////////////////////*/
+@media only screen and (min-width: 769px) {
+    #aboutUs-section{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin: 10px auto;
+        height: auto;
+    }
+    #AboutUs-page1, #AboutUs-page2{
+        width: 50%;
+        height: 50%;
+    }
+    .AboutUs-wrapper{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
+    .AboutUs-wrapper--person{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        position: relative;
+        background: white;
+        transition: 1.5s ease-in;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 20px;
+    }
+    .AboutUs-nameAndButton{
+        text-align: center;
+    }
+    .photo-box{
+        background-color: transparent;
+        width: 225px;
+        height: 240px;
+        perspective: 1500px;
+        position: relative;
+    }
+    .photo-box--card{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transform-style: preserve-3d;
+        transition: all 1s ease-in-out;
+    }
+    .photo-box--card:hover{
+        transform: rotateY(180deg);
+    }
+    .photo-box__front, .photo-box__front1, .photo-box__front2, .photo-box__front3{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        position: absolute;
+        background: url("pictures/janakolo.jpg");
+        background-size: cover;
+        backface-visibility: hidden;
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+    }
+    .photo-box__front1{
+        background: url("pictures/Karol3.jpg");
+        background-size: cover;
+    }
+    .photo-box__front2{
+        background: url("pictures/Patryk.jpg");
+        background-size: cover;
+    }
+    .photo-box__front3{
+        background: url("pictures/Mikolaj.jpg");
+        background-size: cover;
+    }
+    .photo-box__back{
+        border-radius: 50%;
+        background-color: gray;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .photo-box i{
+        font-size: 70px;
+        color: purple;
+    }
+    .photo-box i:hover{
+        color: orange;
+        transition: all 0.4 ease-in;
+    }
+    .AboutUs-nameAndButton{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .AboutUs-nameAndButton h3{
+        padding: 10px;
+        font-size: 20px;
+    }
+   
+    .AboutUs-nameAndButton button, .hideButton1{
+        padding: 6px 14px;
+        font-size: 16px;
+        border: none;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+    }
+    .hideButton1{
+        margin: 10px;
+    }
+    .pTags-Marcin, .pTags-Karol, .pTags-Patryk, .pTags-Mikolaj{
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: white;
+        z-index: -5;
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        border-radius: 20px;
+        
+    }
+    .pTags-Marcin, .pTags-Karol, .pTags-Patryk, .pTags-Mikolaj p{
+        padding: 10px 20px;
+    }
+}
+/*////////////////////////////////////////////////////////////////////////*/
+
+@media only screen and (max-width: 768px) {
+    
+    #AboutUs-page1, #AboutUs-page2{
+        width: 100%;
+        height: 100%;
+    }
+    .AboutUs-wrapper{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    }
+    .AboutUs-wrapper--person{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .photo-box{
+        background-color: transparent;
+        width: 281px;
+        height: 300px;
+        perspective: 1500px;
+        position: relative;
+    }
+    .photo-box--card{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transform-style: preserve-3d;
+        transition: all 1s ease-in-out;
+    }
+    .photo-box--card:hover{
+        transform: rotateY(180deg);
+    }
+    .photo-box__front, .photo-box__front1, .photo-box__front2, .photo-box__front3{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        position: absolute;
+        background: url("pictures/janakolo.jpg");
+        background-size: cover;
+        backface-visibility: hidden;
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+    }
+    .photo-box__front1{
+        background: url("pictures/Karol3.jpg");
+        background-size: cover;
+    }
+    .photo-box__front2{
+        background: url("pictures/Patryk.jpg");
+        background-size: cover;
+    }
+    .photo-box__front3{
+        background: url("pictures/Mikolaj.jpg");
+        background-size: cover;
+    }
+    .photo-box__back{
+        border-radius: 50%;
+        background-color: gray;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .photo-box i{
+        font-size: 70px;
+        color: purple;
+    }
+    .photo-box i:hover{
+        color: orange;
+        transition: all 0.4 ease-in;
+    }
+    .AboutUs-nameAndButton{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .AboutUs-nameAndButton h3{
+        padding: 10px;
+        margin: 10px;
+        font-size: 40px;
+    }
+    .AboutUs-nameAndButton button, .hideButton1{
+        padding: 6px 14px;
+        font-size: 26px;
+        border: none;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+    }
+    .pTags-Marcin, .pTags-Karol, .pTags-Patryk, .pTags-Mikolaj{
+        border-radius: 10px;
+        text-align: center;
+        position: absolute;
+        width: 90%;
+        height: 50%;
+        font-size: 26px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 1);
+        z-index: -5;
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        transition: 0.7s ease-in,;
+    }
+    .hideButton1{
+        padding: 6px 14px;
+        border: none;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        margin: 15px;
+    }
+}
+/*////////////////////////////////////////////////////////////////////////*/
+@media only screen and (max-width: 480px) {
+    
+    #AboutUs-page1, #AboutUs-page2{
+        width: 100%;
+        height: 100%;
+    }
+    .AboutUs-wrapper{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    }
+    .AboutUs-wrapper--person{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+    .photo-box{
+        background-color: transparent;
+        width: 225px;
+        height: 240px;
+        perspective: 1500px;
+        position: relative;
+    }
+    .photo-box--card{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transform-style: preserve-3d;
+        transition: all 1s ease-in-out;
+    }
+    .photo-box--card:hover{
+        transform: rotateY(180deg);
+    }
+    .photo-box__front, .photo-box__front1, .photo-box__front2, .photo-box__front3{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        position: absolute;
+        background: url("pictures/janakolo.jpg");
+        background-size: cover;
+        backface-visibility: hidden;
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+    }
+    .photo-box__front1{
+        background: url("pictures/Karol3.jpg");
+        background-size: cover;
+    }
+    .photo-box__front2{
+        background: url("pictures/Patryk.jpg");
+        background-size: cover;
+    }
+    .photo-box__front3{
+        background: url("pictures/Mikolaj.jpg");
+        background-size: cover;
+    }
+    .photo-box__back{
+        border-radius: 50%;
+        background-color: gray;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .photo-box i{
+        font-size: 50px;
+        color: purple;
+    }
+    .photo-box i:hover{
+        color: orange;
+        transition: all 0.4 ease-in;
+    }
+    .AboutUs-nameAndButton{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .AboutUs-nameAndButton h3{
+        padding: 6px;
+        font-size: 20px;
+    }
+    .AboutUs-nameAndButton button, .hideButton1{
+        padding: 6px 14px;
+        font-size: 16px;
+        border: none;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+    }
+    .pTags-Marcin, .pTags-Karol, .pTags-Patryk, .pTags-Mikolaj{
+        border-radius: 10px;
+        text-align: center;
+        position: absolute;
+        width: 90%;
+        height: 50%;
+        font-size: 18px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 1);
+        z-index: -5;
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        transition: 0.7s ease-in,;
+    }
+    .hideButton1{
+        padding: 6px 14px;
+        border: none;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        margin: 15px;
+    }
+} /*zamyka media query*/
+/*////////////////////////////////////////////////////////////////////////*/
+@media only screen and (max-width: 320px) {
+    
+    #AboutUs-page1, #AboutUs-page2{
+        width: 100%;
+        height: 100%;
+    }
+    .AboutUs-wrapper{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    }
+    .AboutUs-wrapper--person{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .photo-box{
+        background-color: transparent;
+        width: 169px;
+        height: 180px;
+        perspective: 1500px;
+        position: relative;
+    }
+    .photo-box--card{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transform-style: preserve-3d;
+        transition: all 1s ease-in-out;
+    }
+    .photo-box--card:hover{
+        transform: rotateY(180deg);
+    }
+    .photo-box__front, .photo-box__front1, .photo-box__front2, .photo-box__front3{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        position: absolute;
+        background: url("pictures/janakolo.jpg");
+        background-size: cover;
+        backface-visibility: hidden;
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+    }
+    .photo-box__front1{
+        background: url("pictures/Karol3.jpg");
+    }
+    .photo-box__front2{
+        background: url("pictures/Patryk.jpg");
+    }
+    .photo-box__front3{
+        background: url("pictures/Mikolaj.jpg");
+    }
+    .photo-box__back{
+        border-radius: 50%;
+        background-color: gray;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .photo-box i{
+        font-size: 50px;
+        color: purple;
+    }
+    .photo-box i:hover{
+        color: orange;
+        transition: all 0.4 ease-in;
+    }
+    .AboutUs-nameAndButton{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .AboutUs-nameAndButton h3{
+        padding: 10px;
+        font-size: 16px;
+    }
+    .AboutUs-nameAndButton button, .hideButton1{
+        padding: 6px 14px;
+        font-size: 12px;
+        border: none;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+    }
+    .pTags-Marcin, .pTags-Karol, .pTags-Patryk, .pTags-Mikolaj{
+        border-radius: 10px;
+        text-align: center;
+        position: absolute;
+        width: 90%;
+        height: 50%;
+        font-size: 15px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 1);
+        z-index: -5;
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        transition: 0.7s ease-in,;
+    }
+    .hideButton1{
+        padding: 6px 14px;
+        border: none;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        margin: 15px;
+    }
+} /*zamyka media query*/
+/*////////////////// END OF ABOUT US SECTION//////////////////////////////*/
