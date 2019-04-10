@@ -5,10 +5,12 @@
 }
 :root{
     --menu-font-color: rgba(238, 238, 238);
-    --menu-background-color: rgb(86, 201, 4, 1);
+    --menu-background-color: rgb(102, 42, 42);
     --menu-hover-bg-color: #222; 
-    --h1-color: rgb(86, 201, 4, 1);
+    --h1-color: rgb(102, 42, 42);
     --font-type: Amatic SC, cursive;
+    --fb-icon-color: orange;
+    --fb-icon-color-hover: purple;
 
 }
 html{
@@ -36,6 +38,7 @@ body{
         display: flex;
         justify-content: space-evenly;
         scroll-behavior: smooth;
+        transition: 0.7s all ease-in-out;
 
     }
     .menu-bar a{
@@ -46,9 +49,10 @@ body{
         text-align: center;
         justify-content: center;
         align-items: center;
+        transition: all 0.3s ease-in-out;
     }
     .menu-bar a:hover{
-        border-bottom: 1px solid var(--menu-font-color);
+        transform: scale(1.4);
     }
 
 }
@@ -62,6 +66,7 @@ body{
         display: flex;
         justify-content: space-evenly;
         scroll-behavior: smooth;
+        transition: 0.7s all ease-in-out;
 
     }
     .menu-bar a{
@@ -72,9 +77,10 @@ body{
         text-align: center;
         justify-content: center;
         align-items: center;
+        transition: all 0.3s ease-in-out;
     }
     .menu-bar a:hover{
-        border-bottom: 1px solid var(--menu-font-color);
+        transform: scale(1.4);
     }
 
 }
@@ -88,6 +94,7 @@ body{
         display: flex;
         justify-content: space-evenly;
         scroll-behavior: smooth;
+        transition: 0.7s all ease-in-out;
 
     }
     .menu-bar a{
@@ -99,9 +106,10 @@ body{
         text-align: center;
         justify-content: center;
         align-items: center;
+        transition: all 0.3s ease-in-out;
     }
     .menu-bar a:hover{
-        border-bottom: 1px solid var(--menu-font-color);
+        transform: scale(1.4);
     }
 
 }
@@ -116,6 +124,7 @@ body{
         display: flex;
         justify-content: space-evenly;
         scroll-behavior: smooth;
+        transition: 0.7s all ease-in-out;
 
     }
     .menu-bar a{
@@ -127,9 +136,10 @@ body{
         text-align: center;
         justify-content: center;
         align-items: center;
+        transition: all 0.3s ease-in-out;
     }
     .menu-bar a:hover{
-        border-bottom: 3px solid var(--menu-font-color);
+        transform: scale(1.4);
     }
 
 }
@@ -142,6 +152,7 @@ body{
         background-size: 100vw 100vh;
         width: 100%;
         height: 100%;
+        transition: all 1s ease;
     }
 
     .landing-column1--text{
@@ -166,6 +177,10 @@ body{
         background-color: var(--menu-background-color);
         color: var(--menu-font-color);
         border: none;
+        transition: all 0.3s ease-in-out;
+    }
+    .landing-column2 button:hover{
+        transform: scale(1.2);
     }
 }
 @media only screen and (max-width: 480px){
@@ -198,6 +213,10 @@ body{
         background-color: var(--menu-background-color);
         color: var(--menu-font-color);
         border: none;
+        transition: all 0.3s ease-in-out;
+    }
+    .landing-column2 button:hover{
+        transform: scale(1.2);
     }
 }
 @media only screen and (max-width: 768px){
@@ -232,6 +251,10 @@ body{
         background-color: var(--menu-background-color);
         color: var(--menu-font-color);
         border: none;
+        transition: all 0.3s ease-in-out;
+    }
+    .landing-column2 button:hover{
+        transform: scale(1.2);
     }
 }
 
@@ -268,15 +291,16 @@ body{
         background-color: var(--menu-background-color);
         color: var(--menu-font-color);
         border: none;
+        transition: all 0.3s ease-in-out;
+    }
+    .landing-column2 button:hover{
+        transform: scale(1.2);
     }
 }
 /******************koniec hero****************/
 
 /************poczatek product info************/
 @media only screen and (max-width: 768px) {
-    .productfunctions--wraper:first-child{
-        margin-top: 10px;
-    }
     .productfunctions--wraper{
         display: flex;
         flex-direction: column;
@@ -312,10 +336,10 @@ body{
         flex-direction: row;
         justify-content: space-evenly;
         text-align: center;
-        width: 80%;
+        width: 100%;
         height: auto;
-        padding: 0;
-        border-radius: 20px;
+        padding: 0px;
+        border-radius: 0px 0px 20px 20px;
         background-color: var(--menu-background-color);
         color: var(--menu-font-color);
         margin: auto;
@@ -343,11 +367,11 @@ body{
     padding: 15px; 
     border-radius: 10px; 
     font-size: 20px; 
+    transition: 0.7s all ease-in-out;
   }
-  
   #myBtn:hover {
-    background-color: green; 
-  }
+    opacity: 1;
+}
 }
 @media only screen and (max-width: 480px){
     #myBtn {
@@ -365,10 +389,9 @@ body{
         border-radius: 10px; 
         font-size: 30px; 
       }
-      
       #myBtn:hover {
-        background-color: green; 
-      }
+        opacity: 1;
+    }
     }
     
     @media only screen and (max-width: 768px){
@@ -387,10 +410,9 @@ body{
             border-radius: 10px; 
             font-size: 30px; 
           }
-          
           #myBtn:hover {
-            background-color: green; 
-          }
+            opacity: 1;
+        }
         }
 
     @media only screen and (min-width: 769px){
@@ -420,6 +442,8 @@ body{
 
 
 /*******************KONIEC GO TO TOP BUTTON***********/
+
+
 /*/////////////////////////BEGINNING OF ABOUT US SECTION//////////////////////*/
 @media only screen and (min-width: 769px) {
     #aboutUs-section{
@@ -446,7 +470,7 @@ body{
         align-items: center;
         justify-content: space-evenly;
         position: relative;
-        background: white;
+        background: var(--menu-font-color);
         transition: 1.5s ease-in;
         border-radius: 20px;
         margin: 10px;
@@ -477,7 +501,7 @@ body{
         height: 100%;
         border-radius: 50%;
         position: absolute;
-        background: url("pictures/janakolo.jpg");
+        background: url("images/janakolo.jpg");
         background-size: cover;
         backface-visibility: hidden;
         -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
@@ -485,20 +509,20 @@ body{
         box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
     }
     .photo-box__front1{
-        background: url("pictures/Karol3.jpg");
+        background: url("images/Karol3.jpg");
         background-size: cover;
     }
     .photo-box__front2{
-        background: url("pictures/Patryk.jpg");
+        background: url("images/Patryk.jpg");
         background-size: cover;
     }
     .photo-box__front3{
-        background: url("pictures/Mikolaj.jpg");
+        background: url("images/Mikolaj.jpg");
         background-size: cover;
     }
     .photo-box__back{
         border-radius: 50%;
-        background-color: gray;
+        background-color: var(--menu-background-color);
         position: absolute;
         width: 100%;
         height: 100%;
@@ -513,10 +537,10 @@ body{
     }
     .photo-box i{
         font-size: 70px;
-        color: purple;
+        color: var(--fb-icon-color);
     }
     .photo-box i:hover{
-        color: orange;
+        color: var(--fb-icon-color-hover);
         transition: all 0.4 ease-in;
     }
     .AboutUs-nameAndButton{
@@ -603,7 +627,7 @@ body{
         height: 100%;
         border-radius: 50%;
         position: absolute;
-        background: url("pictures/janakolo.jpg");
+        background: url("images/janakolo.jpg");
         background-size: cover;
         backface-visibility: hidden;
         -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
@@ -611,20 +635,20 @@ body{
         box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
     }
     .photo-box__front1{
-        background: url("pictures/Karol3.jpg");
+        background: url("images/Karol3.jpg");
         background-size: cover;
     }
     .photo-box__front2{
-        background: url("pictures/Patryk.jpg");
+        background: url("images/Patryk.jpg");
         background-size: cover;
     }
     .photo-box__front3{
-        background: url("pictures/Mikolaj.jpg");
+        background: url("images/Mikolaj.jpg");
         background-size: cover;
     }
     .photo-box__back{
         border-radius: 50%;
-        background-color: gray;
+        background-color: var(--menu-background-color);
         position: absolute;
         width: 100%;
         height: 100%;
@@ -639,10 +663,10 @@ body{
     }
     .photo-box i{
         font-size: 70px;
-        color: purple;
+        color: var(--fb-icon-color);
     }
     .photo-box i:hover{
-        color: orange;
+        color: var(--fb-icon-color-hover);
         transition: all 0.4 ease-in;
     }
     .AboutUs-nameAndButton{
@@ -734,7 +758,7 @@ body{
         height: 100%;
         border-radius: 50%;
         position: absolute;
-        background: url("pictures/janakolo.jpg");
+        background: url("images/janakolo.jpg");
         background-size: cover;
         backface-visibility: hidden;
         -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
@@ -742,20 +766,20 @@ body{
         box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
     }
     .photo-box__front1{
-        background: url("pictures/Karol3.jpg");
+        background: url("images/Karol3.jpg");
         background-size: cover;
     }
     .photo-box__front2{
-        background: url("pictures/Patryk.jpg");
+        background: url("images/Patryk.jpg");
         background-size: cover;
     }
     .photo-box__front3{
-        background: url("pictures/Mikolaj.jpg");
+        background: url("images/Mikolaj.jpg");
         background-size: cover;
     }
     .photo-box__back{
         border-radius: 50%;
-        background-color: gray;
+        background-color: var(--menu-background-color);
         position: absolute;
         width: 100%;
         height: 100%;
@@ -770,10 +794,10 @@ body{
     }
     .photo-box i{
         font-size: 50px;
-        color: purple;
+        color: var(--fb-icon-color);
     }
     .photo-box i:hover{
-        color: orange;
+        color: var(--fb-icon-color-hover);
         transition: all 0.4 ease-in;
     }
     .AboutUs-nameAndButton{
@@ -863,7 +887,7 @@ body{
         height: 100%;
         border-radius: 50%;
         position: absolute;
-        background: url("pictures/janakolo.jpg");
+        background: url("images.jpg");
         background-size: cover;
         backface-visibility: hidden;
         -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
@@ -871,17 +895,17 @@ body{
         box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
     }
     .photo-box__front1{
-        background: url("pictures/Karol3.jpg");
+        background: url("images/Karol3.jpg");
     }
     .photo-box__front2{
-        background: url("pictures/Patryk.jpg");
+        background: url("images/Patryk.jpg");
     }
     .photo-box__front3{
-        background: url("pictures/Mikolaj.jpg");
+        background: url("images/Mikolaj.jpg");
     }
     .photo-box__back{
         border-radius: 50%;
-        background-color: gray;
+        background-color: var(--menu-background-color);
         position: absolute;
         width: 100%;
         height: 100%;
@@ -896,10 +920,10 @@ body{
     }
     .photo-box i{
         font-size: 50px;
-        color: purple;
+        color: var(--fb-icon-color);
     }
     .photo-box i:hover{
-        color: orange;
+        color: var(--fb-icon-color-hover);
         transition: all 0.4 ease-in;
     }
     .AboutUs-nameAndButton{

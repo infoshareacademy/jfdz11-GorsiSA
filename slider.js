@@ -20,8 +20,7 @@ function zdjTel(){
 function zdjKomp(){
     setInterval(zmianazdjec, 3000); //zdj na kompa
         let indexZdj = 0;
-        let zdjecia = [ "url('images/pic1.jpg')", 
-        "url('images/pic2.jpg')", "url('images/pic4.jpg')"];
+        let zdjecia = [ "url('images/pic1.jpg')", "url('images/pic4.jpg')", "url('images/pic2.jpg')" ];
 
         let sekcja = document.getElementById("landing-section");
 
