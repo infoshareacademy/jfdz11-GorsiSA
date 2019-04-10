@@ -16,19 +16,19 @@
 <body>
     
         <div id="menu-bar" class="menu-bar">
-            <a href="#home">Home</a>
-            <a href="#news">Zapisz się</a>
-            <a href="#contact">Funkcje</a>
-            <a href="#about">Zespół</a>
+            <a href="#landing-section">Home</a>
+            <a href="#signUp-form">Zapisz się</a>
+            <a href="#aboutUs-section">Zespół</a>
+            <a href="#product-info">Funkcje</a>
         </div>
 <section id="landing-section" class="landing-section">
     
         <div class="landing-column1--text">
             <h2>Zorientuj się z naszą aplikacją</h2>
-            <h3>Poznaj funkcje i ciesz się prostotą</h3>
+            <h3>Poznaj funkcje. Ciesz się prostotą</h3>
         </div>
         <div class="landing-column2">
-            <button type="submit" href="#formularz" class="signButton">Zapisz się na premierę</button>
+            <button type="submit" class="signButton"><a href="#signUp-form">Zapisz się na premierę</a></button>
         </div>
 </section>
 <section id="productinfo-section" class="productinfo-section">
@@ -78,8 +78,6 @@
                         aktualnej pracy gdzie za pomoca G-Codu ustalam tor narzedzi skrawajacych.
                         Do rozpoczecia kursu skonila mnie charakterystyka branzy IT i mozliwosc
                         nieustannego rozwoju.</p>
-                    <p>Moja pasja jest rytm ktory mam glowie nawet wchodzac po schodach.
-                        Na codzien gram na bebnach afrykanskich i perkusji.</p>
                     <button class="hideButton1" onclick="hideInfo(grabPTagsMarcin)">Pokaż mniej</button>
                 </div>
             </div>
@@ -157,7 +155,7 @@
                           powstaje. Chciałem wiedzieć jak wygląda to co robię na
                            komputerze od zaplecza i właśnie ta myśl skłoniła mnie 
                            do zapisania się na kurs programisty.</p>
-                        <p>Aktualnie zajmuję się pisaniem artykułów na różnych 
+                        <p>Aktualnie zajmuję się pisaniem artykułów na 
                             stronach internetowych jednak większość czasu poświęcam
                             nauce.</p>
                         <button class="hideButton1" onclick="hideInfo(grabPTagsMikolaj)">Pokaż mniej</button>
@@ -166,66 +164,68 @@
         </div>
         </section>
     </section>
-<div class="main">
-    <div class="column1">
-        <div class="map"
+    <section id="product-info">
+    <div class="main">
+        <div class="column1">
+            <div class="map"
+                data-iconcolor="#fe4641"
+                data-bgcolor="#f9f9f9">
+                <img src="icons/map.svg" class="map_icon" >
+                    <h4> Gdzie nas znaleźć?</h4>
+                    <p>
+                        Wszędzie tam gdzie dzieją się ciekawe wydarzenia sportowe, jesteśmy na bieżąco ze wszystkimi istotnymi spotkaniami.
+                    </p>
+            </div>
+            <div class="writing"
+                data-iconcolor="#fe4641"
+                data-bgcolor="#f9f9f9">
+                <img src="icons/writing.svg" class="writing_icon">
+                    <h4> Jak to działa?</h4>
+                    <p>
+                        Wchodzisz na naszą stronę i zapisujesz się do newslettera, wybierasz interesujące Cię opcje, a już nigdy nie przegapisz interesującego cię wydarzenia.
+                    </p>
+            </div>
+            <div class="improve"
+                data-iconcolor="#fe4641"
+                data-bgcolor="#f9f9f9">
+                <img src="icons/impovement.svg" class="improvement_icon">
+                    <h4> Co dzięki nam zyskujesz?</h4>
+                    <p>
+                        Wszystko na czym ci zależy :) poprawa sylwetki, ciekawe spędzanie czasu lub po prostu poznanie nowych ludzi!
+                    </p>
+            </div>
+        </div>
+    <div class="column2">
+        <div class="people"
             data-iconcolor="#fe4641"
             data-bgcolor="#f9f9f9">
-            <img src="icons/map.svg" class="map_icon" >
-                <h4> Gdzie nas znaleźć?</h4>
+            <img src="icons/people.svg" class="people_icon">
+                <h4> Znajdź zapaleńców podobnych Tobie!</h4>
                 <p>
-                    Wszędzie tam gdzie dzieją się ciekawe wydarzenia sportowe, jesteśmy na bieżąco ze wszystkimi istotnymi spotkaniami.
+                    Dzięki naszej stronie będziesz mógł zaprosić do wspólnych biegów znajomych bądź poznać nowe osoby.
                 </p>
         </div>
-        <div class="writing"
+        <div class="notification"
             data-iconcolor="#fe4641"
             data-bgcolor="#f9f9f9">
-            <img src="icons/writing.svg" class="writing_icon">
-                <h4> Jak to działa?</h4>
-                <p>
-                    Wchodzisz na naszą stronę i zapisujesz się do newslettera, wybierasz interesujące Cię opcje, a już nigdy nie przegapisz interesującego cię wydarzenia.
-                </p>
-        </div>
-        <div class="improve"
-            data-iconcolor="#fe4641"
-            data-bgcolor="#f9f9f9">
-            <img src="icons/impovement.svg" class="improvement_icon">
-                <h4> Co dzięki nam zyskujesz?</h4>
-                <p>
-                    Wszystko na czym ci zależy :) poprawa sylwetki, ciekawe spędzanie czasu lub po prostu poznanie nowych ludzi!
-                </p>
-        </div>
-    </div>
- <div class="column2">
-    <div class="people"
-        data-iconcolor="#fe4641"
-        data-bgcolor="#f9f9f9">
-        <img src="icons/people.svg" class="people_icon">
-            <h4> Znajdź zapaleńców podobnych Tobie!</h4>
+            <img src="icons/notification.svg" class="notification_icon">
+            <h4>Przypomnienia!</h4>
             <p>
-                Dzięki naszej stronie będziesz mógł zaprosić do wspólnych biegów znajomych bądź poznać nowe osoby.
+                Poprzez zapisanie się do subskrypcji już nigdy nie pominiesz interesującego cię eventu.
             </p>
+        </div>
+        <div class="chat"
+            data-iconcolor="#fe4641"
+            data-bgcolor="#f9f9f9">
+            <img src="icons/chat.svg" class="chat_icon">
+            <h4>Komunikacja!</h4>
+            <p>
+                Możesz wymieniać się informcjami o nadchodzących wydarzeniach z innymi, bądź po prostu umówić się z kimś na wspólny bieg.
+            </p>
+        </div>
     </div>
-    <div class="notification"
-        data-iconcolor="#fe4641"
-        data-bgcolor="#f9f9f9">
-        <img src="icons/notification.svg" class="notification_icon">
-        <h4>Przypomnienia!</h4>
-        <p>
-            Poprzez zapisanie się do subskrypcji już nigdy nie pominiesz interesującego cię eventu.
-        </p>
     </div>
-    <div class="chat"
-        data-iconcolor="#fe4641"
-        data-bgcolor="#f9f9f9">
-        <img src="icons/chat.svg" class="chat_icon">
-        <h4>Komunikacja!</h4>
-        <p>
-            Możesz wymieniać się informcjami o nadchodzących wydarzeniach z innymi, bądź po prostu umówić się z kimś na wspólny bieg.
-        </p>
-    </div>
-</div>
-</div>
+</section>
 
 <section id="signUp-form">
     <div class="contain" >

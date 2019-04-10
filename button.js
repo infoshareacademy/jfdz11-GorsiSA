@@ -3,6 +3,7 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
     document.getElementById("myBtn").style.display = "block";
+    document.getElementById("myBtn").style.opacity = "0.7"
     document.getElementById("menu-bar").style.height = "10%";
     document.getElementById("menu-bar").style.opacity = "0.7"
 
