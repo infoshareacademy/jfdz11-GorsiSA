@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style.css" media="all">
     <link rel="stylesheet" type="text/css" href="form.css" media="all">
-    <title>Functionalities</title>
+    <link rel="stylesheet" type="text/css"  href="cookies.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="cookies.css">
+   <title>Functionalities</title>
 </head>
 <body>
     <div class="title">O stronie</div>
@@ -99,7 +101,15 @@
                         
                 </form>
             </div>
+
+
+            <div id="cookies-message-container">
+                <div id="cookies-message">Ta strona używa ciasteczek (cookies), dzięki którym nasz serwis może działać lepiej.<a href="javascript:WHCloseCookiesWindow();" 
+                    id="accept-cookies-checkbox">Rozumiem</a></div></div>
+    </div>
         </section>
+
+      
     <div id="copyright">
         Copyright &copy;
         <br>
@@ -107,5 +117,7 @@
         <br>
         last modified - march 2019
     </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-alt-circle-up">x</i></button>
+    <script src="cookieinfo.js"></script>
 </body>
 </html>

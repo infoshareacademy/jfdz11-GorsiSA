@@ -36,6 +36,7 @@
 .wrapper{
 	padding: 5px;
 	text-align: justify;
+	font-size: 18px;
 }
 
 
@@ -49,8 +50,9 @@ input[type=email]
 	color: #666;
 	border: 2px solid #ddd;
 	border-radius: 5px;
+	padding: 10px;
     margin: auto;
-
+    font-size: 18px;
 	box-sizing: border-box;
 	outline: none;
 	margin-top: 10px;
@@ -70,6 +72,7 @@ input[type=submit]
 	cursor: pointer;
 	letter-spacing: 2px;
 	outline: none;
+	font-size: 18px;
 	
 }
 
