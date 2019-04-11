@@ -23,57 +23,148 @@ body {
     justify-content: center;
     align-items: stretch;
     flex-wrap: wrap;
+    
+
 }
-.column1 {
-    display: flex;
-    flex-direction: column;
-    float: left;
-    justify-content: center;
+
+@media only screen and (min-width: 320px) {
+    .column1 {
+        
+        flex-direction: column;
+        float: left;
+        justify-content: center;
+        }
+    .column2{
+       
+        flex-direction: column;
+        float: right;
+        justify-content: center;
+        }
+    
+        .map, .writing, .improve, .people, .notification, .chat{
+            color: #FFF;
+            font-weight: bold;
+            padding: 20px;
+            text-align: center;
+            text-align: justify;
+            border: 2px solid #5D6063;
+            border-radius: 5px;
+            width: 300px;
+            height: 200px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            margin-right: 20px;
+            margin-left: 20px;
+          }
+        
+        .map_icon,.writing_icon, .improvement_icon, .people_icon, .notification_icon, .chat_icon{
+            display:flex;
+            margin: auto;
+            width: 100px;
+            height: 82px;
+            background-color:rgb(102, 42, 42);
+            text-align: center;
+         
+        }
     }
-.column2{
-    display: flex;
-    flex-direction: column;
-    float: right;
-    justify-content: center;
-    }
+   
+
+
+
 @media only screen and (min-width: 768px) {
 .column1 {
-    display: flex;
+    
     flex-direction: column;
     float: left;
     justify-content: center;
     }
 .column2{
-    display: flex;
+   
     flex-direction: column;
     float: right;
     justify-content: center;
     }
-}
-.map, .writing, .improve, .people, .notification, .chat{
-    color: #FFF;
-    font-weight: bold;
-    padding: 20px;
-    text-align: center;
-    text-align: justify;
-    border: 2px solid #5D6063;
-    border-radius: 5px;
-    width: 300px;
-    height: 200px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-right: 20px;
-    margin-left: 20px;
-  }
 
-.map_icon,.writing_icon, .improvement_icon, .people_icon, .notification_icon, .chat_icon{
-    display: block;
-    margin: auto;
-    width: 100px;
-    height: 82px;
-    background-color:rgb(102, 42, 42);
-    text-align: center;
+    .map, .writing, .improve, .people, .notification, .chat{
+        color: #FFF;
+        font-weight: bold;
+        padding: 20px;
+        text-align: center;
+        text-align: justify;
+        border: 2px solid #5D6063;
+        border-radius: 5px;
+        width: 315px;
+        height: 200px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+    
+    .map_icon,.writing_icon, .improvement_icon, .people_icon, .notification_icon, .chat_icon{
+        display:flex;
+        margin: auto;
+        width: 100px;
+        height: 82px;
+        background-color:rgb(102, 42, 42);
+        text-align: center;
+     
+    }
 }
+
+
+
+
+@media only screen and (min-width: 769- 960px) {
+    .column1 {
+        
+        flex-direction: column;
+        float: left;
+        justify-content: center;
+        display: flex;
+        font-size:18px
+        }
+    .column2{
+       
+        flex-direction: column;
+        float: right;
+        justify-content: center;
+        display: flex;
+        font-size: 18px;
+        }
+
+        .map, .writing, .improve, .people, .notification, .chat{
+            color: #FFF;
+            font-weight: bold;
+            padding: 20px;
+            text-align: center;
+            text-align: justify;
+            border: 2px solid #5D6063;
+            border-radius: 5px;
+            width: 450px;
+            height: 300px;
+            font-size:18px;
+            margin-top: 15px;
+           margin: auto;
+            margin-bottom: 15px;
+            margin-right: 20px;
+            margin-left: 20px;
+          }
+        
+        .map_icon,.writing_icon, .improvement_icon, .people_icon, .notification_icon, .chat_icon{
+            display:flex;
+            margin: auto;
+            width: 160px;
+            font-size:18px;
+            height: 82px;
+          
+            background-color:rgb(102, 42, 42);
+            text-align: center;
+         
+        }
+    }
+
+
 
 #copyright {
     display: block;
