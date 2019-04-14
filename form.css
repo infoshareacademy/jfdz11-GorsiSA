@@ -7,19 +7,8 @@
 .contain{
 	background-color: #000;
 	color:rgba(238, 238, 238);
-	display: block;
-	max-width: 620px;
-	box-sizing: content-box;
-	outline: none;
+	margin: 20px;
 	text-align: center;
-	padding: 50px;
-
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 40px;
-    margin-bottom:50px;
-	font-size: 42px;
-	font-weight: 400;
 	-webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
 	-moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
 	box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
@@ -30,19 +19,27 @@
 	text-align: justify;
 }
 
+.wrapper p{
+	font-size: 16px;
+}
+.forms-style{
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+}
 
 
 input[type=email]
 {   
     clear: both;
-	flex-direction: row-reverse;
+	flex-direction: column;
 	text-align: center;
 	background-color: #efefef;
 	color: #666;
 	border: 2px solid #ddd;
 	border-radius: 5px;
     margin: auto;
-
+      
 	box-sizing: border-box;
 	outline: none;
 	margin-top: 10px;
@@ -70,4 +67,7 @@ input[type=submit]:focus
 	-webkit-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
 	-moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
 	box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+}
+.form-header{
+	font-size: 22px;
 }
