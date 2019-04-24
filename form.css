@@ -1,13 +1,17 @@
 
- #signUp-form{
-	 width: 100%;
- }
 
 
 .contain{
 	background-color: #000;
 	color:rgba(238, 238, 238);
-	margin: 20px;
+	margin-left: auto;
+	margin-right:auto;
+	font-size: 48px;
+	font-family: Amatic SC, cursive;
+	margin-top: 40px;
+	max-width: 640px;
+	padding: 20px;
+	box-sizing: content-box;
 	text-align: center;
 	-webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
 	-moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
@@ -15,34 +19,45 @@
 }
 
 .wrapper{
-	padding: 5px;
+	padding: 10px;
 	text-align: justify;
+	margin-right: auto;
+	margin-left:auto;
+    margin:20px;
+	
 }
 
 .wrapper p{
-	font-size: 16px;
+	font-size: 28px;
 }
 .forms-style{
-	margin: 20px;
+
+    font-size: 36px;
 	display: flex;
 	flex-direction: column;
+	margin-bottom:40px;
+
 }
 
 
 input[type=email]
 {   
-    clear: both;
+ 
 	flex-direction: column;
 	text-align: center;
 	background-color: #efefef;
 	color: #666;
+	height: 60px;
+	width: 196px;
 	border: 2px solid #ddd;
-	border-radius: 5px;
-    margin: auto;
-      
+	
+	font-size: 36px;
 	box-sizing: border-box;
-	outline: none;
-	margin-top: 10px;
+	margin-top: 60px;
+	margin: auto;
+	box-sizing: border-box;
+
+	
 
 }
 
@@ -50,11 +65,18 @@ input[type=submit]
 {
 	
 	background-color:rgb(102, 42, 42);
-	
+	height: 60px;
+	width: 140px;
+	box-sizing: border-box;
 	color: white;
-	padding: 15px 10px;
-	margin-top: 20px;
+	padding: 15px 10px 10px 15px;
+	margin: auto;
+	margin-top: 36px;
+	font-size: 36px;
+	margin-bottom: 20px;
 	border: none;
+	
+
 	border-radius: 5px;
 	cursor: pointer;
 	letter-spacing: 2px;
@@ -63,7 +85,7 @@ input[type=submit]
 }
 
 input[type=submit]:focus
-{
+{ 
 	-webkit-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
 	-moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
 	box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);

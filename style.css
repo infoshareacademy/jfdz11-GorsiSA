@@ -215,37 +215,17 @@ h4 {
         margin-bottom: 5px;
         color: #fff;
     }    
-    #copyright {
-        display: block;
-        color: rgba(255, 255, 255, 0.397);
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-        padding: 10px 0;
-        display: block;
-        font-size: 9px;
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        line-height: 26px;
-        margin: 0;
-        text-align: center;
-        margin: auto;
-        width: 70%;
-    }
-}
+  
+
 #copyright {
-    display: block;
+  
     color: rgba(255, 255, 255, 0.397);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 10px 0;
-    display: block;
-    font-size: 9px;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    line-height: 26px;
-    margin: 0;
     text-align: center;
-    margin: auto;
-    width: 80%;
+    margin:40px;
+    padding: 40px;
+    font-size: 48px;
+    height: 80px;
+    position: fixed;
 }
-
+    }
