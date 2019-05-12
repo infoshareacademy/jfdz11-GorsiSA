@@ -5,18 +5,20 @@
 
 
 #stage {
-    width: 3000px;
-    height: 50vh;
-    background-color: green;
+    width: 5000px;
+    height: 567px;
+    background-image: url('/tło1.png');
+    background-repeat: repeat;
     display: inline-block;
     position: relative;
 }
 
 .square
 {
-    width: 50px;
-    height: 50px;
-    background-color: red;
+    width: 80px;
+    height: 80px;
+    background-image: url('/game/płotekultimate.png');
+   
     margin: auto;
     bottom:0;
     position: absolute;
@@ -25,12 +27,12 @@
 
 .player
 {
-    width: 50px;
-    height: 50px;
-    background-color: blue;
+    width: 200px;
+    height: 200px;
+    background-image: url('/runner.gif');
     margin: auto;
     bottom:0;
-    left:0;
+    left:200px;
     position: absolute;
   
 }

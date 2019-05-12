@@ -7,6 +7,7 @@
     const obstacleWidth = 50;
     const positions = [];
     const gameNode = document.querySelector('#stage');
+    const player = document.querySelector('.player');
     let intervalId;
     for (let i = 0; i < 10; i += 1) {
         const range = distanceMax - distanceMin
@@ -39,6 +40,27 @@
     document.addEventListener('keyup', event => {
         if (event.code === 'Space') {
             console.log('space');
+            player.style.bottom = "200px"
+
+            if (parseInt(player.style.bottom) > 250) {
+                player.style.bottom = "250px"
+            }
+            falling(player)
         }
     })
-})()
+
+    let fallingID;
+    const falling = (playerNode) => {
+        if(parseInt(playerNode.style.bottom) < 10 ) {
+            return;
+        }
+        falling.position = parseInt(playerNode.style.bottom)
+      falling.position -= 10
+      playerNode.style.bottom = falling.position + 'px'
+      requestAnimationFrame(falling.bind(falling, playerNode))
+        console.log(playerNode.style.bottom)
+    }
+
+
+
+})()  
