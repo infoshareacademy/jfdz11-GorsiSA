@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Planer biegów na orientacje</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="root.css">
+    <link rel="stylesheet" type="text/css" href="style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="form.css" media="all">
+    <link rel="icon" href="images/favicon.png" type="image/favicon"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+
+</head>
+<body>
+    
+        <div id="menu-bar" class="menu-bar">
+           
+            <a href="#landing-section">Strona główna</a>
+            <a href="#signUp-form">Zapisz się</a>
+            <a href="#aboutUs-section">Zespół</a>
+            <a href="#product-info">Funkcje</a>
+        </div>
+<section id="landing-section" class="landing-section">
+    
+        <div class="landing-column1--text">
+            <h2>Zorientuj się z naszą aplikacją</h2>
+            <h3>Poznaj funkcje. Ciesz się prostotą</h3>
+        </div>
+        <div class="landing-column2">
+            <button type="submit" class="signButton"><a href="#signUp-form">Zapisz się na premierę</a></button>
+        </div>
+</section>
+<section id="productinfo-section" class="productinfo-section">
+    <div class="productfunctions">
+        <div class="productfunctions--wraper">
+            <div class="productfunctions__icon">
+                <i class="fas fa-map-pin"></i>
+                <h3>Znajdź eventy w okolicy</h2>
+            </div>
+            <div class="productfunctions__icon">
+                <i class="fas fa-user-friends"></i>
+                <h3>Poznaj biegaczy z okolic</h2>
+            </div>
+            <div class="productfunctions__icon">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>Ogólnopolski kalendarz eventów</h2>
+            </div>
+            <div class="productfunctions__icon">
+                <i class="fas fa-running"></i>
+                <h3>Znajdz trasy, umów się na trening</h2>
+            </div>
+        </div> 
+    </div>
+</section>
+<section id="aboutUs-section">
+    <section id="AboutUs-page1">
+        <div class="AboutUs-wrapper">
+            <div class="AboutUs-wrapper--person">
+                <div class="photo-box">
+                    <div class="photo-box--card">
+                        <div class="photo-box__front"></div>
+                        <div class="photo-box__back">
+                            <a href="https://www.facebook.com/marcin.jarowski" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                            <a href="https://github.com/MarcinJarowski" target="_blank"><i class="fab fa-github-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="AboutUs-nameAndButton">
+                    <h3>Marcin Jarowski</h3>
+                    <button class="showButton1" onclick="showInfo(grabPTagsMarcin)">Pokaż więcej</button>
+                </div>
+                <div class="pTags-Marcin" id="pTags-Marcin">
+                    <p>Moje pierwsze przygody z front-endem zaczynalem jako
+                        nastolatek edytujac wyglad graficzny stron 
+                        zaprzyjaznionych klanow w spolecznosci Counter Strike</p>
+                    <p>Programowaniem zarazilem sie w 
+                        aktualnej pracy gdzie za pomoca G-Codu ustalam tor narzedzi skrawajacych.
+                        Do rozpoczecia kursu skonila mnie charakterystyka branzy IT i mozliwosc
+                        nieustannego rozwoju.</p>
+                    <button class="hideButton1" onclick="hideInfo(grabPTagsMarcin)">Pokaż mniej</button>
+                </div>
+            </div>
+
+    <div class="AboutUs-wrapper--person">
+        <div class="photo-box">
+            <div class="photo-box--card">
+                    <div class="photo-box__front1"></div>
+                    <div class="photo-box__back">
+                        <a href="https://www.facebook.com/karol.komosa.1" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://github.com/KarolKomosa" target="_blank"><i class="fab fa-github-square"></i></a>
+                    </div>
+            </div>
+        </div>
+        <div class="AboutUs-nameAndButton">
+            <h3>Karol Komosa</h3>
+            <button class="showButton" onclick="showInfo(grabPTagsKarol)">Pokaż więcej</button>
+        </div>
+        <div class="pTags-Karol" id="pTags-Karol">
+                <p>W swojej pracy tworze mapy tematyczne, oraz postery, bardzo podoba 
+                mi sie fakt, ze spod moich rak wychodzi produkt "ladnie wizualny",
+                 dlatego tez zaciekawil mnie kurs Front Endu.</p>
+                <p>Z wyksztalcenia jestem geologiem przez co zaintersowalem sie 
+                    wspinaczka. Czesto mozna mnie spotkac na trojmiejskich sciankach
+                     wspinaczkowych.</p>
+                <button class="hideButton1" onclick="hideInfo(grabPTagsKarol)">Pokaż mniej</button>
+            </div>
+    </div>
+</div>
+</section>
+<section id="AboutUs-page2">
+        <div class="AboutUs-wrapper">
+            <div class="AboutUs-wrapper--person">
+                <div class="photo-box">
+                    <div class="photo-box--card">
+                            <div class="photo-box__front2"></div>
+                            <div class="photo-box__back">
+                                <a href="https://www.facebook.com/patryk.witczak.3" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                                <a href="https://github.com/Petriu" target="_blank"><i class="fab fa-github-square"></i></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="AboutUs-nameAndButton">
+                    <h3>Patryk Witczak</h3>
+                    <button class="showButton1" onclick="showInfo(grabPTagsPatryk)">Pokaż więcej</button>
+                </div>
+                <div class="pTags-Patryk" id="pTags-Patryk">
+                    <p>Cześć jestem Patryk i jako freelancer tworze strony internetowe.</p>
+                    <p>W wolnym czasie lubię oglądać filmy i seriale, przy pogodzie jeździć
+                         na rolkach.</p>
+                    <p>Moje motto życiowe brzmi "Nie zniechęcaj się, jeśli będziesz
+                         pomimo porażek robił codziennie, choć jeden krok do przodu,
+                          po wielu miesiącach dojdziesz do celu.</p>
+                    <button class="hideButton1" onclick="hideInfo(grabPTagsPatryk)">Pokaż mniej</button>
+                </div>
+            </div>
+    
+            <div class="AboutUs-wrapper--person">
+                <div class="photo-box">
+                    <div class="photo-box--card">
+                            <div class="photo-box__front3"></div>
+                            <div class="photo-box__back">
+                                <a href="https://www.facebook.com/qilinzezutsu" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                                <a href="https://github.com/Hebanisko" target="_blank"><i class="fab fa-github-square"></i></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="AboutUs-nameAndButton">
+                    <h3>Mikołaj Kuźmicki</h3>
+                    <button class="showButton1" onclick="showInfo(grabPTagsMikolaj)">Pokaż więcej</button>
+                </div>
+                <div class="pTags-Mikolaj" id="pTags-Mikolaj">
+                        <p>Znaczny czas mojego dzieciństwa poświęciłem grom komputerowym,
+                         to właśnie one wzbudziły we mnie zainteresowanie jak taka gra
+                          powstaje. Chciałem wiedzieć jak wygląda to co robię na
+                           komputerze od zaplecza i właśnie ta myśl skłoniła mnie 
+                           do zapisania się na kurs programisty.</p>
+                        <button class="hideButton1" onclick="hideInfo(grabPTagsMikolaj)">Pokaż mniej</button>
+                    </div>
+            </div>
+        </div>
+        </section>
+    </section>
+    <section id="product-info">
+    <div class="main">
+        <div class="column1">
+            <div class="map"
+                data-iconcolor="#fe4641"
+                data-bgcolor="#f9f9f9">
+                <img src="icons/map.svg" class="map_icon" >
+                    <h4> Gdzie nas znaleźć?</h4>
+                    <p class="about_us_p">
+                        Wszędzie tam gdzie dzieją się ciekawe wydarzenia sportowe, jesteśmy na bieżąco ze wszystkimi istotnymi spotkaniami.
+                    </p>
+            </div>
+            <div class="writing"
+            data-iconcolor="#fe4641"
+            data-bgcolor="#f9f9f9">
+            <img src="icons/writing.svg" class="writing_icon">
+                <h4> Jak to działa?</h4>
+                <p class="about_us_p">
+                    Wchodzisz na naszą stronę i zapisujesz się do newslettera, wybierasz interesujące Cię opcje, a już nigdy nie przegapisz interesującego cię wydarzenia.
+                </p>
+        </div>
+        <div class="improve"
+            data-iconcolor="#fe4641"
+            data-bgcolor="#f9f9f9">
+            <img src="icons/impovement.svg" class="improvement_icon">
+                <h4> Co dzięki nam zyskujesz?</h4>
+                <p class="about_us_p">
+                    Wszystko na czym ci zależy :) poprawa sylwetki, ciekawe spędzanie czasu lub po prostu poznanie nowych ludzi!
+                </p>
+        </div>
+    </div>
+ <div class="column2">
+    <div class="people"
+        data-iconcolor="#fe4641"
+        data-bgcolor="#f9f9f9">
+        <img src="icons/people.svg" class="people_icon">
+            <h4> Znajdź zapaleńców podobnych Tobie!</h4>
+            <p class="about_us_p">
+                Dzięki naszej stronie będziesz mógł zaprosić do wspólnych biegów znajomych bądź poznać nowe osoby.
+            </p>
+    </div>
+    <div class="notification"
+        data-iconcolor="#fe4641"
+        data-bgcolor="#f9f9f9">
+        <img src="icons/notification.svg" class="notification_icon">
+        <h4>Przypomnienia!</h4>
+        <p class="about_us_p">
+            Poprzez zapisanie się do subskrypcji już nigdy nie pominiesz interesującego cię eventu.
+        </p>
+    </div>
+    <div class="chat"
+        data-iconcolor="#fe4641"
+        data-bgcolor="#f9f9f9">
+        <img src="icons/chat.svg" class="chat_icon">
+        <h4>Komunikacja!</h4>
+        <p class="about_us_p">
+            Możesz wymieniać się informcjami o nadchodzących wydarzeniach z innymi, bądź po prostu umówić się z kimś na wspólny bieg.
+        </p>
+    </div>
+    </div>
+    </div>
+</section>
+
+<section id="signUp-form">
+    <div class="contain" >
+            <form action="order.php" method="post">
+                <span style="font-size:18px;">Uwaga zostanie wyslany tylko jeden mail z informacja o premierze!</span>
+                <input type="email" placeholder="adres@domena" onfocus="this.placeholder=''" onblur="this.placeholder='adres@domena'" required>
+                <input type="submit" value="Zapisz się"><br>
+                <div class="wrapper" style="clear:both;">
+                <p style="font-size:12px"><span>Mam prawo do wycofania się z tej zgody w dowolnym terminie. Dane osobowe będą przetwarzane do czasu jej odwołania.
+                    Mam prawo dostępu do moich danych osobowych, ich sprostowania, usunięcia lub ograniczenia przetwarzania, a także do wniesienia skargi do organu nadzorującego.
+                    W sytuacji wniesienia sprzeciwu wobec profilowania – prosimy skorzystać z ustawień przeglądarki.</p></span></div>
+            </form>
+        </div>
+</section>
+
+<footer id="copyright">
+    Copyright &copy;
+    <br>
+    Made with passion by <i>GorsiSA</i>
+    <br>
+    last modified - march 2019
+</footer>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-alt-circle-up"></i></button>
+	
+
+    <script src="slider.js"></script>
+    <script src="button.js"></script>
+</body>
+</html>

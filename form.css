@@ -1,0 +1,74 @@
+
+ #signUp-form{
+	width: 100%;
+}
+
+
+.contain{
+   background-color: #000;
+   color:rgba(238, 238, 238);
+   display: block;
+   max-width: 620px;
+   box-sizing: content-box;
+   outline: none;
+   text-align: center;
+   padding: 50px;
+
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 40px;
+   margin-bottom:50px;
+   font-size: 42px;
+   font-weight: 400;
+   border: 2px solid #666;
+   border-radius: 5px;
+   margin: auto;
+
+}
+
+.wrapper{
+   padding: 5px;
+   text-align: justify;
+}
+
+
+
+input[type=email]
+{   
+   clear: both;
+   flex-direction: row-reverse;
+   text-align: center;
+   background-color: #efefef;
+   color: #666;
+   border: 2px solid #ddd;
+   border-radius: 5px;
+   margin: auto;
+
+   box-sizing: border-box;
+   outline: none;
+   margin-top: 10px;
+
+}
+
+input[type=submit]
+{
+   
+   background-color:rgb(102, 42, 42);
+   
+   color: white;
+   padding: 15px 10px;
+   margin-top: 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   letter-spacing: 2px;
+   outline: none;
+   
+}
+
+input[type=submit]:focus
+{
+   -webkit-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+   -moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+   box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+}
