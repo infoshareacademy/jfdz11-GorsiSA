@@ -1,0 +1,984 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Amatic SC', cursive;
+
+}
+:root{
+    --menu-font-color: rgba(238, 238, 238);
+    --menu-background-color: rgb(102, 42, 42);
+    --menu-hover-bg-color: #222; 
+    --h1-color: rgb(102, 42, 42);
+    --font-type: Amatic SC, cursive;
+    --fb-icon-color:  rgba(238, 238, 238);
+    --fb-icon-color-hover: orange;
+
+}
+html{
+    width: 100%;
+    height: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--menu-background-color);
+    
+}
+body a{
+    text-decoration: none;
+    color: var(--menu-font-color);
+}
+/**********************poczatek menu ************************/
+@media only screen and (max-width: 320px){
+    .menu-bar{
+        width: 100%;
+        background-color: var(--menu-background-color);
+        height: 15%;
+        position: fixed;
+        z-index: 999;
+        display: flex;
+        justify-content: space-evenly;
+        scroll-behavior: smooth;
+        transition: 0.7s all ease-in-out;
+        background-image: url('images/logo.png');
+
+    }
+    .menu-bar a{
+        display: flex;
+        text-decoration: none;
+        color: var(--menu-font-color);
+        max-width: 25%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+    }
+    
+
+}
+@media only screen and (max-width: 480px){
+    .menu-bar{
+        width: 100%;
+        background-color: var(--menu-background-color);
+        height: 15%;
+        position: fixed;
+        z-index: 999;
+        display: flex;
+        justify-content: space-evenly;
+        scroll-behavior: smooth;
+        transition: 0.7s all ease-in-out;
+
+    }
+    .menu-bar a{
+        display: flex;
+        text-decoration: none;
+        color: var(--menu-font-color);
+        max-width: 25%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+    }
+   
+
+}
+@media only screen and (max-width: 768px){
+    .menu-bar{
+        width: 100%;
+        background-color: var(--menu-background-color);
+        height: 15%;
+        position: fixed;
+        z-index: 999;
+        display: flex;
+        justify-content: space-evenly;
+        scroll-behavior: smooth;
+        transition: 0.7s all ease-in-out;
+
+    }
+    .menu-bar a{
+        font-size: 20px;
+        display: flex;
+        text-decoration: none;
+        color: var(--menu-font-color);
+        max-width: 25%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+    }
+
+}
+
+@media only screen and (min-width: 769px) {
+    .menu-bar{
+        width: 100%;
+        background-color: var(--menu-background-color);
+        height: 15%;
+        position: fixed;
+        z-index: 999;
+        display: flex;
+        justify-content: space-evenly;
+        scroll-behavior: smooth;
+        transition: 0.7s all ease-in-out;
+
+    }
+    .menu-bar a{
+        font-size: 30px;
+        display: flex;
+        text-decoration: none;
+        color: var(--menu-font-color);
+        max-width: 25%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease-in-out;
+    }
+    .menu-bar a:hover{
+        transform: scale(1.4);
+    }
+
+}
+/************** koniec menu *************************/
+
+/***********poczatek*hero*****************************/
+@media only screen and (max-width: 320px){
+    .landing-section{
+        background: url("images/pic2resp.jpg");
+        background-size: 100vw 100vh;
+        width: 100%;
+        height: 100%;
+        transition: all 1s ease;
+    }
+
+    .landing-column1--text{
+        color: var(--h1-color);
+        width: 100%;
+        height: 70%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+    .landing-column2{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .landing-column2 button{
+        padding: 15px;
+        text-align: center;
+        border-radius: 15px;
+        background-color: var(--menu-background-color);
+        color: var(--menu-font-color);
+        border: none;
+        transition: all 0.3s ease-in-out;
+    }
+    .landing-column2 button:hover{
+        transform: scale(1.2);
+    }
+}
+@media only screen and (max-width: 480px){
+    .landing-section{
+        background: url("images/pic2resp.jpg");
+        background-size: 100vw 100vh;
+        width: 100%;
+        height: 100%;
+    }
+
+    .landing-column1--text{
+        color: var(--h1-color);
+        width: 100%;
+        height: 70%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+    .landing-column2{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .landing-column2 button{
+        padding: 15px;
+        text-align: center;
+        border-radius: 15px;
+        background-color: var(--menu-background-color);
+        color: var(--menu-font-color);
+        border: none;
+        transition: all 0.3s ease-in-out;
+    }
+    .landing-column2 button:hover{
+        transform: scale(1.2);
+    }
+}
+@media only screen and (max-width: 768px){
+    .landing-section{
+        background: url("images/pic2resp.jpg");
+        background-size: 100vw 100vh;
+        width: 100%;
+        height: 100%;
+    }
+
+    .landing-column1--text{
+        font-size: 20px;
+        color: var(--h1-color);
+        width: 100%;
+        height: 70%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+    .landing-column2{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .landing-column2 button{
+        font-size: 20px;
+        padding: 15px;
+        text-align: center;
+        border-radius: 15px;
+        background-color: var(--menu-background-color);
+        color: var(--menu-font-color);
+        border: none;
+        transition: all 0.3s ease-in-out;
+    }
+    .landing-column2 button:hover{
+        transform: scale(1.2);
+    }
+}
+
+@media only screen and (min-width: 769px){
+    
+    .landing-section{
+        background: url("images/pic1.jpg");
+        background-size: 100vw 100vh;
+        width: 100%;
+        height: 100%;
+    }
+
+    .landing-column1--text{
+        font-size: 30px;
+        color: var(--h1-color);
+        width: 100%;
+        height: 70%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+    .landing-column2{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .landing-column2 button{
+        font-size: 30px;
+        padding: 20px;
+        text-align: center;
+        border-radius: 15px;
+        background-color: var(--menu-background-color);
+        color: var(--menu-font-color);
+        border: none;
+        transition: all 0.3s ease-in-out;
+    }
+    .landing-column2 button:hover{
+        transform: scale(1.2);
+    }
+}
+/******************koniec hero****************/
+
+/************poczatek product info************/
+@media only screen and (max-width: 768px) {
+    .productfunctions--wraper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-basis: 300px;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        background-color: var(--menu-background-color);
+        color: var(--menu-font-color);
+    }
+    .productfunctions__icon{
+        width: 100%;
+        border-radius: 20px;
+        margin: 10px 0;
+    }
+    .productfunctions__icon:hover{
+        border-bottom: 1px solid var(--menu-font-color);
+        width: 200px;
+        border-radius: 0px;
+        
+    }
+    .productfunctions__icon i{
+        font-size: 45px;
+        padding: 10px 0 0 0;
+    }
+}
+@media only screen and (min-width: 768px) {
+    
+    .productfunctions--wraper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        padding: 0px;
+        border-radius: 0px 0px 20px 20px;
+        background-color: var(--menu-background-color);
+        color: var(--menu-font-color);
+        margin: auto;
+    }
+    .productfunctions__icon i{
+        font-size: 45px;
+        padding: 20px 0 0 0;
+    }
+}
+/**********************koniec product info*****/
+
+/************POCZATEK GO TO TOP BUTTON***************/
+@media only screen and (max-width: 320px){
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 1px; 
+    right: 1px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: var(--menu-background-color); 
+    color: var(--menu-font-color); 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 20px; 
+  }
+  #myBtn:hover {
+    opacity: 1;
+}
+}
+@media only screen and (max-width: 480px){
+    #myBtn {
+        display: none; 
+        position: fixed; 
+        bottom: 10px; 
+        right: 10px; 
+        z-index: 99; 
+        border: none; 
+        outline: none; 
+        background-color: var(--menu-background-color); 
+        color: white; 
+        cursor: pointer; 
+        padding: 15px; 
+        border-radius: 10px; 
+        font-size: 30px; 
+      }
+      #myBtn:hover {
+        opacity: 1;
+    }
+    }
+    
+    @media only screen and (max-width: 768px){
+        #myBtn {
+            display: none; 
+            position: fixed; 
+            bottom: 20px; 
+            right: 30px; 
+            z-index: 99; 
+            border: none; 
+            outline: none; 
+            background-color: var(--menu-background-color); 
+            color: white; 
+            cursor: pointer; 
+            padding: 15px; 
+            border-radius: 10px; 
+            font-size: 30px; 
+          }
+          #myBtn:hover {
+            opacity: 1;
+        }
+        }
+
+    @media only screen and (min-width: 769px){
+        #myBtn {
+            display: none; 
+            position: fixed; 
+            bottom: 20px; 
+            right: 20px; 
+            z-index: 99;
+            opacity: 0.6; 
+            border: none; 
+            outline: none; 
+            background-color: var(--menu-background-color); 
+            color: white; 
+            cursor: pointer; 
+            padding: 15px; 
+            border-radius: 10px; 
+            font-size: 30px; 
+        }
+        
+        #myBtn:hover {
+            opacity: 1;
+        }
+    }
+
+    
+
+
+/*******************KONIEC GO TO TOP BUTTON***********/
+
+
+/*/////////////////////////BEGINNING OF ABOUT US SECTION//////////////////////*/
+@media only screen and (min-width: 769px) {
+    #aboutUs-section{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin: 10px auto;
+        height: auto;
+    }
+    #AboutUs-page1, #AboutUs-page2{
+        width: 50%;
+        height: 50%;
+    }
+    .AboutUs-wrapper{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
+    .AboutUs-wrapper--person{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        position: relative;
+        background: var(--menu-font-color);
+        transition: 1.5s ease-in;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 20px;
+    }
+    .AboutUs-nameAndButton{
+        text-align: center;
+    }
+    .photo-box{
+        background-color: transparent;
+        width: 225px;
+        height: 240px;
+        perspective: 1500px;
+        position: relative;
+    }
+    .photo-box--card{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transform-style: preserve-3d;
+        transition: all 1s ease-in-out;
+    }
+    .photo-box--card:hover{
+        transform: rotateY(180deg);
+    }
+    .photo-box__front, .photo-box__front1, .photo-box__front2, .photo-box__front3{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        position: absolute;
+        background: url("images/janakolo.jpg");
+        background-size: cover;
+        backface-visibility: hidden;
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+    }
+    .photo-box__front1{
+        background: url("images/Karol3.jpg");
+        background-size: cover;
+    }
+    .photo-box__front2{
+        background: url("images/Patryk.jpg");
+        background-size: cover;
+    }
+    .photo-box__front3{
+        background: url("images/Mikolaj.jpg");
+        background-size: cover;
+    }
+    .photo-box__back{
+        border-radius: 50%;
+        background-color: var(--menu-background-color);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .photo-box i{
+        font-size: 70px;
+        color: var(--fb-icon-color);
+    }
+    .photo-box i:hover{
+        color: var(--fb-icon-color-hover);
+        transition: all 0.4 ease-in;
+    }
+    .AboutUs-nameAndButton{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .AboutUs-nameAndButton h3{
+        padding: 10px;
+        font-size: 28px;
+    }
+   
+    .AboutUs-nameAndButton button, .hideButton1{
+        padding: 6px 14px;
+        font-size: 20px;
+        color: var(--menu-font-color);
+        background-color: var(--menu-background-color);
+        border: none;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        transition: all 0.3s ease-in-out;
+    }
+    .AboutUs-nameAndButton button:hover, .hideButton1:hover{
+        transform: scale(1.2)
+    }
+    .hideButton1{
+        margin: 10px;
+    }
+    .pTags-Marcin, .pTags-Karol, .pTags-Patryk, .pTags-Mikolaj{
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: white;
+        z-index: -5;
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        border-radius: 20px;
+        font-size: 18px;
+        font-style: oblique;
+        font-weight: bold;
+        
+    }
+    .pTags-Marcin, .pTags-Karol, .pTags-Patryk, .pTags-Mikolaj p{
+        padding: 10px 20px;
+    }
+}
+/*////////////////////////////////////////////////////////////////////////*/
+
+@media only screen and (max-width: 768px) {
+    
+    #AboutUs-page1, #AboutUs-page2{
+        width: 100%;
+        height: 100%;
+    }
+    .AboutUs-wrapper{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    }
+    .AboutUs-wrapper--person{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .photo-box{
+        background-color: transparent;
+        width: 281px;
+        height: 300px;
+        perspective: 1500px;
+        position: relative;
+    }
+    .photo-box--card{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transform-style: preserve-3d;
+        transition: all 1s ease-in-out;
+    }
+    .photo-box--card:hover{
+        transform: rotateY(180deg);
+    }
+    .photo-box__front, .photo-box__front1, .photo-box__front2, .photo-box__front3{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        position: absolute;
+        background: url("images/janakolo.jpg");
+        background-size: cover;
+        backface-visibility: hidden;
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+    }
+    .photo-box__front1{
+        background: url("images/Karol3.jpg");
+        background-size: cover;
+    }
+    .photo-box__front2{
+        background: url("images/Patryk.jpg");
+        background-size: cover;
+    }
+    .photo-box__front3{
+        background: url("images/Mikolaj.jpg");
+        background-size: cover;
+    }
+    .photo-box__back{
+        border-radius: 50%;
+        background-color: var(--menu-background-color);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .photo-box i{
+        font-size: 70px;
+        color: var(--fb-icon-color);
+    }
+    .photo-box i:hover{
+        color: var(--fb-icon-color-hover);
+        transition: all 0.4 ease-in;
+    }
+    .AboutUs-nameAndButton{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .AboutUs-nameAndButton h3{
+        padding: 10px;
+        margin: 10px;
+        font-size: 40px;
+    }
+    .AboutUs-nameAndButton button, .hideButton1{
+        padding: 6px 14px;
+        font-size: 26px;
+        color: var(--menu-font-color);
+        background-color: var(--menu-background-color);
+        border: none;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+    }
+    .pTags-Marcin, .pTags-Karol, .pTags-Patryk, .pTags-Mikolaj{
+        border-radius: 10px;
+        text-align: center;
+        position: absolute;
+        width: 90%;
+        height: 50%;
+        font-size: 26px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 1);
+        z-index: -5;
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        transition: 0.7s ease-in,;
+    }
+    .hideButton1{
+        padding: 6px 14px;
+        border: none;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        margin: 15px;
+    }
+}
+/*////////////////////////////////////////////////////////////////////////*/
+@media only screen and (max-width: 480px) {
+    
+    #AboutUs-page1, #AboutUs-page2{
+        width: 100%;
+        height: 100%;
+    }
+    .AboutUs-wrapper{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    }
+    .AboutUs-wrapper--person{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+    .photo-box{
+        background-color: transparent;
+        width: 225px;
+        height: 240px;
+        perspective: 1500px;
+        position: relative;
+    }
+    .photo-box--card{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transform-style: preserve-3d;
+        transition: all 1s ease-in-out;
+    }
+    .photo-box--card:hover{
+        transform: rotateY(180deg);
+    }
+    .photo-box__front, .photo-box__front1, .photo-box__front2, .photo-box__front3{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        position: absolute;
+        background: url("images/janakolo.jpg");
+        background-size: cover;
+        backface-visibility: hidden;
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+    }
+    .photo-box__front1{
+        background: url("images/Karol3.jpg");
+        background-size: cover;
+    }
+    .photo-box__front2{
+        background: url("images/Patryk.jpg");
+        background-size: cover;
+    }
+    .photo-box__front3{
+        background: url("images/Mikolaj.jpg");
+        background-size: cover;
+    }
+    .photo-box__back{
+        border-radius: 50%;
+        background-color: var(--menu-background-color);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .photo-box i{
+        font-size: 50px;
+        color: var(--fb-icon-color);
+    }
+    .photo-box i:hover{
+        color: var(--fb-icon-color-hover);
+        transition: all 0.4 ease-in;
+    }
+    .AboutUs-nameAndButton{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .AboutUs-nameAndButton h3{
+        padding: 6px;
+        font-size: 20px;
+    }
+    .AboutUs-nameAndButton button, .hideButton1{
+        padding: 6px 14px;
+        font-size: 16px;
+        border: none;
+        border-radius: 10px;
+        color: var(--menu-font-color);
+        background-color: var(--menu-background-color);
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+    }
+    .pTags-Marcin, .pTags-Karol, .pTags-Patryk, .pTags-Mikolaj{
+        border-radius: 10px;
+        text-align: center;
+        position: absolute;
+        width: 90%;
+        height: 50%;
+        font-size: 18px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 1);
+        z-index: -5;
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        transition: 0.7s ease-in,;
+    }
+    .hideButton1{
+        padding: 6px 14px;
+        border: none;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        margin: 15px;
+    }
+} /*zamyka media query*/
+/*////////////////////////////////////////////////////////////////////////*/
+@media only screen and (max-width: 320px) {
+    
+    #AboutUs-page1, #AboutUs-page2{
+        width: 100%;
+        height: 100%;
+    }
+    .AboutUs-wrapper{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    }
+    .AboutUs-wrapper--person{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .photo-box{
+        background-color: transparent;
+        width: 169px;
+        height: 180px;
+        perspective: 1500px;
+        position: relative;
+    }
+    .photo-box--card{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transform-style: preserve-3d;
+        transition: all 1s ease-in-out;
+    }
+    .photo-box--card:hover{
+        transform: rotateY(180deg);
+    }
+    .photo-box__front, .photo-box__front1, .photo-box__front2, .photo-box__front3{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        position: absolute;
+        background: url("images.jpg");
+        background-size: cover;
+        backface-visibility: hidden;
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+    }
+    .photo-box__front1{
+        background: url("images/Karol3.jpg");
+    }
+    .photo-box__front2{
+        background: url("images/Patryk.jpg");
+    }
+    .photo-box__front3{
+        background: url("images/Mikolaj.jpg");
+    }
+    .photo-box__back{
+        border-radius: 50%;
+        background-color: var(--menu-background-color);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .photo-box i{
+        font-size: 50px;
+        color: var(--fb-icon-color);
+    }
+    .photo-box i:hover{
+        color: var(--fb-icon-color-hover);
+        transition: all 0.4 ease-in;
+    }
+    .AboutUs-nameAndButton{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .AboutUs-nameAndButton h3{
+        padding: 10px;
+        font-size: 16px;
+    }
+    .AboutUs-nameAndButton button, .hideButton1{
+        padding: 6px 14px;
+        font-size: 12px;
+        border: none;
+        color: var(--menu-font-color);
+        background-color: var(--menu-background-color);
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+    }
+    .pTags-Marcin, .pTags-Karol, .pTags-Patryk, .pTags-Mikolaj{
+        border-radius: 10px;
+        text-align: center;
+        position: absolute;
+        width: 90%;
+        height: 50%;
+        font-size: 15px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 1);
+        z-index: -5;
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        transition: 0.7s ease-in,;
+    }
+    .hideButton1{
+        padding: 6px 14px;
+        border: none;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+        margin: 15px;
+    }
+} /*zamyka media query*/
+/*////////////////// END OF ABOUT US SECTION//////////////////////////////*/
